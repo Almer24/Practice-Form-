@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="formReg.css">
+  <title>Survey Form</title>
+</head>
+<body>
+  <header>
+    <h1 id="title">Company Survey Form</h1>
+    <p id="description"><i>The Company appreciate your time in helping us improve the platform </i></p>
+  </header>
+  <main>
+    <form id="survey-form" action="yawakjskks.com">
+      <div>
+        <label id="name-label">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+      </div>
+      <div>
+        <label id="email-label">Email</label>
+        <input type="email" id="email" placeholder="Enter your Email" required>
+      </div>
+      <div>
+        <label id="number-label">Age <small>(optional)</small></label>
+        <input type="number" id="number" min="12" max="150" placeholder="Age" required>
+      </div>
+      <div>
+        <label>Job Status</label>
+        <select id="dropdown">
+          <option>(choose one)</option>
+          <option>Employed</option>
+          <option>Unemployed</option>
+          <option>Student</option>
+          <option>Prefer not to say</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div>
+        <p class="des">How would you rate us?</p>
+      <label><input type="radio" name="rating" value="5"> Excellent</label>
+      <label><input type="radio" name="rating" value="4"> Good</label>
+      <label><input type="radio" name="rating" value="3"> Ok</label>
+      <label><input type="radio" name="rating" value="2"> Bad</label>
+      <label><input type="radio" name="rating" value="1"> Awful</label>
+      </div>
+      <div>
+        <p class="des">What would you like to improve? <small>(Check all that apply)</small></p>
+      <label><input type="checkbox" value="1"> Front-end Projects </label>
+      <label><input type="checkbox" value="2"> Back-end Projects</label>
+      <label><input type="checkbox" value="3"> Data Visualization</label>
+      <label><input type="checkbox" value="4"> Challenges</label>
+      <label><input type="checkbox" value="5"> Open Source Community</label>
+      <label><input type="checkbox" value="6"> Gitter help rooms</label>
+      <label><input type="checkbox" value="7"> Videos</label>
+      <label><input type="checkbox" value="8"> City Meetups</label>
+      <label><input type="checkbox" value="9"> Wiki</label>
+      <label><input type="checkbox" value="10"> Forum</label>
+      <label><input type="checkbox" value="11"> Additional Course</label>
+      </div>
+      <div class="comment">
+        <label>Add a comment</label>
+          <textarea id="comment" rows="4" cols="30" placeholder="Enter your comments here..."></textarea>
+      </div>
+      <div class="submit">
+        <input type="submit" name="Submit" id="submit">
+      </div>
+    </form>
+  </main>
+</body>
+</html>
